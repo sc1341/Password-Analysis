@@ -152,9 +152,6 @@ def main():
 			graph_password_lengths(data, True, args.organization)
 		else:
 			graph_password_lengths(data, False, args.organization)
-	elif args.wordlist != None:
-		words = in_list(load_passwords(args.passwordfile[0], ''), args.wordlist[0])
-		in_list_graph(words, args.wordlist[0], args.organization)
 	elif args.mostcommon != None:
 		print(most_common_passwords(passwords, args.mostcommon[0]))
 		most_common_passwords_graph(passwords, args.mostcommon[0], args.organization)

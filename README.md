@@ -4,16 +4,16 @@
 This tool analyzes lists of passwords and can display a variety of statistics about them.
 
 ## Using pattern parameter
-![alt text](https://github.com/sc1341/Password-Analysis/blob/main/examples/images/pattern.gif "Pattern example")
+![](https://github.com/sc1341/Password-Analysis/blob/main/examples/images/pattern.gif "Pattern example")
 
 ## Top 10 most common from example.txt
-![alt text](https://github.com/sc1341/Password-Analysis/blob/main/examples/images/most_common.png "Top 10 most common from example.txt")
+![](https://github.com/sc1341/Password-Analysis/blob/main/examples/images/most_common.png "Top 10 most common from example.txt")
 
 ## Password lengths from example.txt
-![alt text](https://github.com/sc1341/Password-Analysis/blob/main/examples/images/lengths.png "Password lengths graph")
+![](https://github.com/sc1341/Password-Analysis/blob/main/examples/images/lengths.png "Password lengths graph")
 
 ## Password lengths with stats and organization name shown from example.txt
-![alt text](https://github.com/sc1341/Password-Analysis/blob/main/examples/images/lengths_with_stats.png "Password lengths graph with statistics shown")
+![](https://github.com/sc1341/Password-Analysis/blob/main/examples/images/lengths_with_stats.png "Password lengths graph with statistics shown")
 
 
 ## Key Features
