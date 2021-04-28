@@ -125,9 +125,13 @@ def pattern_detection(creds: list):
 				found[pattern] += 1
 	return found
 
-def format_output(data: dict):
-	for key, value in data.items():
-		print(f"{key} : {value}")
+def format_output(data: dict, latex):
+	if latex:
+		for key, value in data.items():
+			print(f"{key}&{value}\\\\")
+	else:
+		for key, value in data.items():
+			print(f"{key} : {value}")
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Password analyzer")
@@ -139,6 +143,7 @@ def parse_args():
     parser.add_argument("--showstats", help="Show statistics such as median on the graphs if it applies", required=False, action='store_true')
     parser.add_argument("--pattern", help="Prints out pattern detection from the wordlist", required=False, action="store_true")
     parser.add_argument("--organization", help="Specity an organization name for the title of each graph", required=False, type=str)
+    parser.add_argument("--latex", help="Outputs in latex format in a table", required=False, action='store_true')
     return parser.parse_args()
 
 def main():
@@ -157,7 +162,7 @@ def main():
 		most_common_passwords_graph(passwords, args.mostcommon[0], args.organization)
 	elif args.pattern != None:
 		data = pattern_detection(passwords)
-		format_output(data)
+		format_output(data, args.latex)
 
 if __name__ == "__main__":
 	main()
